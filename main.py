@@ -1,14 +1,13 @@
 # Import Statements
 import requests
 from bs4 import BeautifulSoup
-
-
 # function to scrap the web
 def scraper(bbc_url,):
     """scrap the bbc website extract your specific need and show to the user"""
     response = requests.get(bbc_url)
     print(response.status_code)
 
+    # covert the result to html parser
     soup = BeautifulSoup(response.content, 'html.parser')
     # print(soup.prettify())
 
@@ -43,5 +42,3 @@ def scraper(bbc_url,):
 url = 'https://www.bbc.com/news/articles/cjr7e2z1rxyo'
 
 # show the results
-scraper(url)
-
