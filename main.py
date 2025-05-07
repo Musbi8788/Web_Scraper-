@@ -1,6 +1,7 @@
 # Import Statements
 import requests
 from bs4 import BeautifulSoup
+
 # function to scrap the web
 def scraper(bbc_url):
     """scrap the bbc website extract your specific need and show to the user"""
