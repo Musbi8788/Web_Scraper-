@@ -8,6 +8,7 @@ def scraper(bbc_url):
     response = requests.get(bbc_url)
     print(response.status_code)
 
+    # covert the result to html parser
     soup = BeautifulSoup(response.content, 'html.parser')
     # print(soup.prettify())
 
