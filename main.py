@@ -36,9 +36,8 @@ def scraper(bbc_url,):
             print(news_body_contents)
         print('Thanks for read the news')
         
-            
-    
 
 url = 'https://www.bbc.com/news/articles/cjr7e2z1rxyo'
 
 # show the results
+scraper(url)
